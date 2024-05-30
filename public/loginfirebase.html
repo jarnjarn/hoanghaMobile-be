@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- cdn firebase -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+	<script>
+		const firebaseConfig = {
+	apiKey: "AIzaSyAvt-VoqdW6QOfOtr8fQzVuBjp-YGT3F60",
+	authDomain: "smartmap-8faf9.firebaseapp.com",
+	projectId: "smartmap-8faf9",
+	storageBucket: "smartmap-8faf9.appspot.com",
+	messagingSenderId: "1042954486787",
+	appId: "1:1042954486787:web:59225dc7dcbc386e7d3a36"
+};
+firebase.initializeApp(firebaseConfig);
+	</script>
+	<style>
+		.container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.container ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.container ul li
+		{
+			margin: 10px;
+			background: black;
+			color: white;
+			padding: 20px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Login firebase firebase</h1>
+		<ul>
+			<li onclick="signInWithGoogle()">Google</li>
+		</ul>
+	</div>
+	<div class="isLogin">
+		<div>
+			<label for="idToken">
+				token :
+				<input type="text" id="idToken">
+				<button for="idToken">coppy</button>
+			</label>
+			<br>
+			<label for="email">
+				email :
+				<input type="text" id="email">
+			</label>
+			<br>
+			<label for="displayName">
+				display :
+				<input type="text" id="displayName">
+			</label>
+		</div>
+		<br>
+		<div>
+			<button onclick="signOut()">
+				Sign out
+			</button>
+		</div>
+	</div>
+	<script>
+		const coppy = (id) => {
+			const idTokenx = document.getElementById(id);
+			idTokenx.select();
+			idTokenx.setSelectionRange(0, 99999);
+			document.execCommand("copy");
+		}
+		document.querySelector('button[for="idToken"]').addEventListener('click', () => {
+			coppy('idToken');
+		});
+	</script>
+	<script>
+		const provider = new firebase.auth.GoogleAuthProvider();
+		const auth = firebase.auth();
+		const signInWithGoogle = () => {
+			auth.signInWithPopup(provider)
+			.then((result) => {
+				const user = result.user;
+				console.log(user);
+			})
+			.catch((error) => {
+				console.log(error.message);
+			});
+		}
+		const signOut = () => {
+			auth.signOut()
+			.then(() => {
+				console.log('sign out');
+			})
+			.catch((error) => {
+				console.log(error.message);
+			});
+		}
+		const observer = () => {
+			auth.onAuthStateChanged((user) => {
+				if (user) {
+					console.log(user);
+					document.querySelector('.isLogin').style.display = 'block';
+					user.getIdToken()
+					.then((idToken) => {
+						console.log(idToken);
+						document.getElementById('idToken').value = idToken;
+					})
+
+					document.getElementById('email').value = user.email;
+					document.getElementById('displayName').value = user.displayName;
+				} else {
+					document.querySelector('.isLogin').style.display = 'none';
+					console.log('no user');
+				}
+			});
+		}
+		observer();
+	</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+export enum SortEnum {
+	TIME_ASC = 'TIME_ASC',
+	TIME_DESC = 'TIME_DESC',
+	PRICE_ASC = 'PRICE_ASC',
+	PRICE_DESC = 'PRICE_DESC',
+
+}

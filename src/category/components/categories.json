@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "641f3e995fb7114607b4584e"
+  },
+  "Name": "Oppo",
+  "Slug": "oppo",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/sRmKKyO.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.418Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.418Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b45850"
+  },
+  "Name": "Nokia",
+  "Slug": "nokia",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/X8ULiqm.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.486Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.486Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b45852"
+  },
+  "Name": "Realme",
+  "Slug": "realmi",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/5ydLr4r.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.552Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.552Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b45854"
+  },
+  "Name": "Masstel",
+  "Slug": "masstel",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/Jbhn0LM.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.619Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.619Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b45856"
+  },
+  "Name": "Apple",
+  "Slug": "apple",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/iNc4AZk.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.684Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.684Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b45858"
+  },
+  "Name": "Philips",
+  "Slug": "philips",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/5wn6c99.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.750Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.750Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b4585a"
+  },
+  "Name": "Samsung",
+  "Slug": "samsung",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/8HCGzVu.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.817Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.817Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b4585c"
+  },
+  "Name": "Tecno",
+  "Slug": "tecno",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/i9y6ozo.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.883Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.883Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e995fb7114607b4585e"
+  },
+  "Name": "Vivo",
+  "Slug": "vivo",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/bEvuKUH.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:01.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:01.949Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641f3e9a5fb7114607b45860"
+  },
+  "Name": "Xiaomi",
+  "Slug": "xiaomi",
+  "Description": "Test",
+  "Image": "https://i.imgur.com/377xYZc.png",
+  "createdAt": {
+    "$date": "2023-03-25T18:34:02.015Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-25T18:34:02.015Z"
+  },
+  "__v": 0
+}]
